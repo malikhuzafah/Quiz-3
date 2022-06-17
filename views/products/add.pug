@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h1 Add New Product
+  form(action="/products/add", method="post")
+    .mb-3 
+      label(for="name", class="form-label") Product Name
+      input#name(type="text", class="form-control", name="name")
+    .mb-3 
+      label(for="price", class="form-label") Product Name
+      input#price(type="text", class="form-control", name="price")
+    input(type="submit", class="btn btn-info")

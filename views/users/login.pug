@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h1 Login
+  form(action="/login", method="post")
+    .mb-3 
+      label(for="email", class="form-label") Email
+      input#email(type="text", class="form-control", name="email")
+    .mb-3 
+      label(for="password", class="form-label") Prassword
+      input#password(type="password", class="form-control", name="password")
+    input(type="submit", class="btn btn-info", value="Login")
